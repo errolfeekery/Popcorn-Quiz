@@ -9,8 +9,36 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 </head>
 <body>
-    <div class="container-fluid">
-        <p>Your Score</p>
+    <div class="container-fluid bg-dark overflow-scroll">
+        <div id="game">
+            <div class="container-fluid">
+                <div class="row text-light p-5 text-center">
+                    <div class="col-10 text-end"><h1>Score</h1></div>
+                    <div class="col-2 text-danger" id="scoreDisplay"><h1>0</h1></div>
+                </div>
+            </div>
+            <div class="container-fluid text-center text-light p-5">
+            <div><h1>These are your questions</h1></div>
+            </div>
+            <div class="container d-grid gap-3 text-light">
+                <div class="p-2 bg-primary">
+                    <p>1</p>   
+                    <p>Question</p>
+                </div>
+                <div class="p-2 bg-primary">
+                    <p>1</p>
+                    <p>Question</p>
+                </div>
+                <div class="p-2 bg-primary">
+                    <p>3</p>
+                    <p>Question</p>
+                </div>
+                <div class="p-2 bg-primary">
+                    <p>4</p>
+                    <p>Question</p>
+                </div>
+              </div>
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
