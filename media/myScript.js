@@ -105,6 +105,7 @@ function startGame(id) {
             hud[0].innerHTML = "True",
             hud[0].style.color = "green",
         } else {
+
             hud[0].innerHTML = "False",
             hud[0].style.color = "red",
         }
