@@ -69,7 +69,32 @@ function startGame(id) {
     const choice4 = document.getElementById("#choice4");
 
     choice1.innerText = Questions[id].answer[0].text;
-    choice1.innerText = Questions[id].answer[0].text;
-    choice1.innerText = Questions[id].answer[0].text;
-    choice1.innerText = Questions[id].answer[0].text;
+    choice2.innerText = Questions[id].answer[1].text;
+    choice3.innerText = Questions[id].answer[2].text;
+    choice4.innerText = Questions[id].answer[3].text;
+
+    choice1.value = Questions[id].answer[0].isCorrect;
+    choice2.value = Questions[id].answer[1].isCorrect;
+    choice3.value = Questions[id].answer[2].isCorrect;
+    choice4.value = Questions[id].answer[3].isCorrect;
+
+    var chosen = "";
+
+    choice1.addEventListener("click", () => {
+        chosen = choice1.value;
+    })
+
+    choice2.addEventListener("click", () => {
+        chosen = choice2.value;
+    })
+
+    choice3.addEventListener("click", () => {
+        chosen = choice3.value;
+    })
+
+    choice4.addEventListener("click", () => {
+        chosen = choice4.value;
+    })
+
+    
 }
