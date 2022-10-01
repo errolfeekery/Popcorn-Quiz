@@ -101,18 +101,28 @@ function startGame(id) {
     const submit = document.getElementById("#submit");
 
     submit[0].addEventListener("click", () => {
-        if (selected == true) {
-            hud[0].innerHTML = "True",
-            hud[0].style.color = "green",
+        if (selected == "true") {
+            result[0].innerHTML = "True";
+            result[0].style.color = "green";
         } else {
-
-            hud[0].innerHTML = "False",
-            hud[0].style.color = "red",
+            result[0].innerHTML = "False";
+            result[0].style.color = "red";
         }
     })
-
 }
 
 if (start) {
     startGame("0");
 }
+
+const next = document.getElementById("#next")[0];
+var id = 0;
+
+next.addEventListener("click", () => {
+    start = false;
+    if (id <2) {
+        id++;
+        startGame(id);
+        console.log(id);
+    }
+})
