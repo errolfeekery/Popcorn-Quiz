@@ -1,3 +1,5 @@
+var start = true;
+
 const Questions = [
     {
         id: 0,
@@ -96,5 +98,20 @@ function startGame(id) {
         chosen = choice4.value;
     })
 
-    
+    const submit = document.getElementById("#submit");
+
+    submit[0].addEventListener("click", () => {
+        if (selected == true) {
+            hud[0].innerHTML = "True",
+            hud[0].style.color = "green",
+        } else {
+            hud[0].innerHTML = "False",
+            hud[0].style.color = "red",
+        }
+    })
+
+}
+
+if (start) {
+    startGame("0");
 }
