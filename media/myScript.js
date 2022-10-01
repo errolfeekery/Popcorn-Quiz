@@ -54,3 +54,22 @@ const Questions = [
         ]
     },
 ]
+
+function startGame(id) {
+    var hud = document.getElementById('#hud-answer');
+    hud [0].innerText = "";
+
+    const question = document.getElementById("#question");
+
+    question.innerText = Questions[id].question;
+
+    const choice1 = document.getElementById("#choice1");
+    const choice2 = document.getElementById("#choice2");
+    const choice3 = document.getElementById("#choice3");
+    const choice4 = document.getElementById("#choice4");
+
+    choice1.innerText = Questions[id].answer[0].text;
+    choice1.innerText = Questions[id].answer[0].text;
+    choice1.innerText = Questions[id].answer[0].text;
+    choice1.innerText = Questions[id].answer[0].text;
+}
