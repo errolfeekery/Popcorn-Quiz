@@ -58,17 +58,17 @@ const Questions = [
 ]
 
 function startGame(id) {
-    var hud = document.getElementById('#hud-answer');
+    var hud = document.getElementById('hud-answer');
     hud [0].innerText = "";
 
-    const question = document.getElementById("#question");
+    const question = document.getElementById("question");
 
     question.innerText = Questions[id].question;
 
-    const choice1 = document.getElementById("#choice1");
-    const choice2 = document.getElementById("#choice2");
-    const choice3 = document.getElementById("#choice3");
-    const choice4 = document.getElementById("#choice4");
+    const choice1 = document.getElementById("choice1");
+    const choice2 = document.getElementById("choice2");
+    const choice3 = document.getElementById("choice3");
+    const choice4 = document.getElementById("choice4");
 
     choice1.innerText = Questions[id].answer[0].text;
     choice2.innerText = Questions[id].answer[1].text;
@@ -115,7 +115,7 @@ if (start) {
     startGame("0");
 }
 
-const next = document.getElementById("#next")[0];
+const next = document.getElementById("next")[0];
 var id = 0;
 
 next.addEventListener("click", () => {
